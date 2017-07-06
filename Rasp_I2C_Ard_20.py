@@ -2,7 +2,7 @@ import site
 import smbus
 import time
 
-# Choose I2C1 bus abc def
+# Choose I2C1 bus
 bus = smbus.SMBus(1)
 # Address for the Arduino board we are communicating
 address = 0x08
