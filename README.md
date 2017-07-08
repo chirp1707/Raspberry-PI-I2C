@@ -15,9 +15,9 @@ There have been other articles describing using the Arduino A/D for the Raspberr
 To implement this project:
 1. Enable the I2C function in the Raspberry-PI in the Raspberry PI configuration table.
 2. Add “dtparam=i2c_baudrate=25000” to the config.txt file located in the /boot directory. This slows down the i2c rate.
-3. Install the Arduino programing software on the Raspberry PI by using “sudo apt-get install Arduino”
+3. Install the Arduino programing software on the Raspberry PI by using “sudo apt-get install arduino”
 4. Go to www.github.com and search for “Raspberry-PI-I2C-Arduino”, then download this as a zip file. Using the file manager go the download directory and unzip the file. Move the unzipped directory into the home directory.
-5. Program the Arduino e.g. by going to Programming then Arduino IDE. Once the IDE opens, in the IDE click on File, then Open and go to the unzipped downloaded file that the extension is “ino”, click open.
+5. Program the Arduino by clicking on the Raspberry, select Programming, then select Arduino IDE. In the IDE select File, then select Open and go to the unzipped downloaded file that the extension is “ino”, click open.
 6. In the upper left corner of the IDE is a check mark, click on it. This compiles and verifies the Arduino file.
 7. Connect a usb cable from the Raspberry PI to the usb connector on the Arduino.
 8. Click on Tools and select Boards. Choose the Arduino that is being used. For example, Arduino Leonardo.
