@@ -13,8 +13,6 @@ There have been other articles describing using the Arduino A/D for the Raspberr
 
 This method has been successfully tested with the Arduino Leonardo, Arduino Uno, and the Arduino Nano. It has been unsuccessful tested with the Arduino Due and Arduino 101.
 
-
-
 To implement this project:
 1. Enable the I2C function in the Raspberry-PI in the Raspberry PI configuration table.
 2. Add “dtparam=i2c_baudrate=25000” to the config.txt file located in the /boot directory. This slows down the i2c rate.
@@ -29,8 +27,7 @@ To implement this project:
 11. Using one of the many diagrams of the Raspberry GPIO, connect the SDA, SCL and ground between the Raspberry PI and the Arduino. The Arduino pins are labeled.
 12. Run the command “i2cdetect –y 1”. This will display of the i2c connections.
 13. The input voltage to be measured should be connected to pin A0 on the Arduino. In order for the Raspberry PI software to align the bytes correctly, pin A3 needs to be connected to pin 5 volts. For testing purposes, connect pin 5 volts to pin A0. 
-14. Run the program by entering “python Rasp_I2C_Ard_20.py.” The display should update once a second with 1023, which represents 5 volts. Move the A0 connection to 3.3 V on the Arduino, the display should change to 686. Move the A0 connection to GND, the display should change to 0.
-
-15. For testing purposes, leave the usb cable attached between the Raspberry PI and Arduino to power the Arduino. The 10 bit A/D stability will be improved if a separate usb converter is used to power the Arduino. The 10 bit A/D stability would be further improved if a 9 to 12 is applied to the barrel plug on the Arduino.
+14. Run the program by entering “python Rasp_I2C_Ard_20.py”. The display should update once a second with 1023, which represents 5 volts. Move the A0 connection to 3.3 V on the Arduino, the display should change to 686. Move the A0 connection to GND, the display should change to 0.
+15. For testing purposes, leave the usb cable attached between the Raspberry PI and Arduino to power the Arduino. The 10 bit A/D stability will be improved if a separate usb converter is used to power the Arduino. The 10 bit A/D stability would be further improved if a 9V power adapter is used power the Arduino via the barrel plug on the Arduino.
 
 
